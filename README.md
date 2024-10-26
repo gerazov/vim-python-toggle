@@ -12,6 +12,14 @@ This is a very simple Vim plugin built on top of [switch.vim](https://github.com
 - `Before` ←→ `After`
 - `Persistent` ←→ `Ephemeral`
 - `Internal` ←→ `External`
+- `Start` ←→ `Stop`
+- `In` ←→ `Out`
+- `Open` ←→ `Close`
+- `Enter` ←→ `Exit`
+- `Lock` ←→ `Unlock`
+- `Connect` ←→ `Disconnect`
+- `Mount` ←→ `Dismount`
+- `Import` ←→ `Export`
 - `Ingress` ←→ `Egress`
 - `Allow` ←→ `Deny`
 - `All` ←→ `None`
