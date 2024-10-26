@@ -17,6 +17,14 @@ let g:switch_custom_definitions =
     \   switch#NormalizedCase(['before', 'after']),
     \   switch#NormalizedCase(['persistent', 'ephemeral']),
     \   switch#NormalizedCase(['internal', 'external']),
+    \   switch#NormalizedCase(['start', 'stop']),
+    \   switch#NormalizedCase(['in', 'out']),
+    \   switch#NormalizedCase(['open', 'close']),
+    \   switch#NormalizedCase(['enter', 'exit']),
+    \   switch#NormalizedCase(['lock', 'unlock']),
+    \   switch#NormalizedCase(['connect', 'disconnect']),
+    \   switch#NormalizedCase(['mount', 'dismount']),
+    \   switch#NormalizedCase(['import', 'export']),
     \   switch#NormalizedCase(['ingress', 'egress']),
     \   switch#NormalizedCase(['allow', 'deny']),
     \   switch#NormalizedCase(['all', 'none'])
@@ -43,6 +51,22 @@ function! ToggleBool()
    elseif search('\c\<persistent\>\|\<ephemeral\>', '', line('.')) > 0
        Switch
    elseif search('\c\<internal\>\|\<external\>', '', line('.')) > 0
+       Switch
+   elseif search('\c\<start\>\|\<stop\>', '', line('.')) > 0
+       Switch
+   elseif search('\c\<in\>\|\<out\>', '', line('.')) > 0
+       Switch
+   elseif search('\c\<open\>\|\<close\>', '', line('.')) > 0
+       Switch
+   elseif search('\c\<enter\>\|\<exit\>', '', line('.')) > 0
+       Switch
+   elseif search('\c\<lock\>\|\<unlock\>', '', line('.')) > 0
+       Switch
+   elseif search('\c\<connect\>\|\<disconnect\>', '', line('.')) > 0
+       Switch
+   elseif search('\c\<mount\>\|\<dismount\>', '', line('.')) > 0
+       Switch
+   elseif search('\c\<import\>\|\<export\>', '', line('.')) > 0
        Switch
    elseif search('\c\<ingress\>\|\<egress\>', '', line('.')) > 0
        Switch
